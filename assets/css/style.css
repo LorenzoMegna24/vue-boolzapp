@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container{
+.contenitore{
   background: rgb(52,149,112);
   background: linear-gradient(180deg, rgba(0,150,136,255) 15%, rgb(215,219,213) 15%);
   height: 100vh;
@@ -17,12 +17,12 @@
   margin: 0 auto;
   width: 80%;
   height: 95%;
-  border: solid red 2px;
   display: flex;
 }
 
 .container-contatti{
   width: 30%;
+  height: 100%;
   border: solid blue 5px;
   background-color: white;
 
@@ -30,8 +30,72 @@
 
 .container-chat{
   width: 70%;
+  height: 100%;
   border: solid green 5px;
   background-color: white;
 
 }
 
+.utente{
+  height: 10%;
+  padding: 10px;
+  background-color: rgb(235, 235, 235);
+}
+
+.utente i{
+  font-size: 20px;
+  color: grey;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mio-profilo{
+height: 100%;
+}
+
+img{
+  height: 100%;
+}
+
+.notifiche{
+  background-color: lightskyblue;
+  height: 10%;
+}
+.notifiche i{
+  color: lightskyblue;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 8px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.notifiche a, .ultimo-msg{
+  color: lightslategray;
+  font-size: 13px;
+}
+
+.notifiche span{
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+.cerca-contatti{
+  height: 7%;
+  background-color: rgb(244, 244, 244);
+}
+.lista-chat{
+  height: 73%;
+  overflow: hidden;
+}
+
+ul{
+  height: 100%;
+}
+li{
+  height: 13%;
+}
+
+li:hover{
+  background-color: lightgray;
+}
