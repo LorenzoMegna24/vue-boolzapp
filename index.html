@@ -36,11 +36,12 @@
             <input type="text" class="form-control" placeholder="Cerca contatto" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
           <div class="lista-chat">
-            <ul class="list-group">
-              <li class="d-flex align-items-center p-2 border-bottom">
-                <img class="rounded-circle me-2" src="assets/img/avatar_1.jpg" alt="">
+            <ul class="list-group" >
+              <li v-for="(element, index) in contacts"
+              class="d-flex align-items-center p-2 border-bottom">
+                <img class="rounded-circle me-2" v-bind:src="element.avatar" alt="">
                 <div class="lh-1">
-                  <span class="name d-block">Michele</span>
+                  <span class="name d-block">{{element.name}}</span>
                   <span class="ultimo-msg">Ultimo messaggio inviato</span>
                 </div>
               </li>

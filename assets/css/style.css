@@ -90,7 +90,7 @@ img{
 }
 .lista-chat{
   height: 73%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 ul{
