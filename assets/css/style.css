@@ -42,7 +42,9 @@
   background-color: rgb(235, 235, 235);
 }
 
-.utente i{
+.utente i,
+.info-chat i,
+.area-testo i{
   font-size: 20px;
   color: grey;
   margin-left: 10px;
@@ -70,7 +72,9 @@ img{
   cursor: pointer;
 }
 
-.notifiche a, .ultimo-msg{
+.notifiche a, 
+.ultimo-msg, 
+.ultimo-accesso{
   color: lightslategray;
   font-size: 13px;
 }
@@ -98,4 +102,63 @@ li{
 
 li:hover{
   background-color: lightgray;
+}
+
+.info-chat{
+  height: 10%;
+  background-color: rgb(237, 235, 235);
+}
+
+.main-chat{
+  height: 80%;
+  background-image: url(../img/mine.jpg);
+}
+.messaggi{
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.container-mio-msg, .container-msg-ricevuto{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container-mio-msg{
+  justify-content: flex-end;
+}
+.container-msg-ricevuto{
+  justify-content: flex-start;
+}
+.mio-messaggio, .messaggio-ricevuto{
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  width: auto;
+  padding: 8px 8px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.mio-messaggio{
+  background-color: rgb(128, 201, 17);
+}
+
+.messaggio-ricevuto{
+  background-color: rgb(227, 226, 226);
+}
+.testo{
+  margin-right: 35px;
+}
+
+.orario{
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  font-size: 10px;
+  color: rgb(131, 131, 131);
+}
+.area-testo{
+  height: 10%;
+  background-color: rgb(245, 234, 220);
 }
