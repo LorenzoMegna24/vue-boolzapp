@@ -58,7 +58,7 @@ img{
 }
 
 .notifiche{
-  background-color: lightskyblue;
+  background-color: #8edafc;
   height: 10%;
 }
 .notifiche i{
@@ -139,11 +139,11 @@ li:hover{
   margin-bottom: 10px;
 }
 .mio-messaggio{
-  background-color: rgb(128, 201, 17);
+  background-color: #d5f9ba;
 }
 
 .messaggio-ricevuto{
-  background-color: rgb(227, 226, 226);
+  background-color: rgb(255, 255, 255);
 }
 .testo{
   margin-right: 35px;
@@ -158,5 +158,5 @@ li:hover{
 }
 .area-testo{
   height: 10%;
-  background-color: rgb(245, 234, 220);
+  background-color: #f3eeea;
 }
