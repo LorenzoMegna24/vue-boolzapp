@@ -16,14 +16,13 @@
 .main{
   margin: 0 auto;
   width: 80%;
-  height: 95%;
+  height: 90%;
   display: flex;
 }
 
 .container-contatti{
   width: 30%;
   height: 100%;
-  border: solid blue 5px;
   background-color: white;
 
 }
@@ -31,7 +30,6 @@
 .container-chat{
   width: 70%;
   height: 100%;
-  border: solid green 5px;
   background-color: white;
 
 }
