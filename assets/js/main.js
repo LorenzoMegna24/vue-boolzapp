@@ -3,6 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        attiva: 0,
         contacts: [
           {
               name: 'Michele',
@@ -173,6 +174,9 @@ const { createApp } = Vue
 
     },
     methods:{
+        apriChat(x){
+            this.attiva = x
+        }
 
     }
   }).mount('#app')
