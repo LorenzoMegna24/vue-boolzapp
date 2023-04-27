@@ -4,6 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         attiva: 0,
+        inputMessaggio: '',
         contacts: [
           {
               name: 'Michele',
@@ -176,6 +177,14 @@ const { createApp } = Vue
     methods:{
         apriChat(x){
             this.attiva = x
+        },
+
+        addMsg(){
+            this.contacts[this.attiva].messages.push({
+                message: this.inputMessaggio,
+                status: 'sent'
+            })
+            this.inputMessaggio = ''
         }
 
     }
