@@ -115,38 +115,34 @@ li:hover{
   margin: 0 auto;
   width: 80%;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-mio-msg, .container-msg-ricevuto{
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
 .container-mio-msg{
   justify-content: flex-end;
 }
 .container-msg-ricevuto{
   justify-content: flex-start;
 }
-.mio-messaggio, .messaggio-ricevuto{
-  display: flex;
-  align-items: center;
-  max-width: 50%;
-  width: auto;
+.sent, .received{
   padding: 8px 8px;
   border-radius: 10px;
   position: relative;
   margin-bottom: 10px;
 }
-.mio-messaggio{
+.sent{
   background-color: #d5f9ba;
+  align-self: flex-end;
 }
 
-.messaggio-ricevuto{
+.received{
   background-color: rgb(255, 255, 255);
+  align-self: flex-start;
 }
 .testo{
   margin-right: 35px;
+  margin-bottom: 0;
 }
 
 .orario{
