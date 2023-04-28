@@ -169,7 +169,7 @@ const { createApp } = Vue
               ],
           }
       ]
-        
+
       }
     },
     mounted(){
@@ -182,6 +182,7 @@ const { createApp } = Vue
 
         addMsg(){
             this.contacts[this.attiva].messages.push({
+                date: this.dataOra(),
                 message: this.inputMessaggio,
                 status: 'sent'
             })
@@ -189,14 +190,22 @@ const { createApp } = Vue
 
             setTimeout( ()=>{
                 this.contacts[this.attiva].messages.push({
+                    date: this.dataOra(),
                     message: 'OK!',
                     status: 'received'
                 })
                }, 2000)
-        
+
         },
 
-        
+        dataOra(){
+            let DateTime = luxon.DateTime;
+            let dt = DateTime.now()
+
+            console.log(dt.toLocaleString());
+            return dt.toLocaleString()
+        }
+
 
 
     },
@@ -204,7 +213,7 @@ const { createApp } = Vue
         filteredList() {
             return this.contacts.filter((contatto) =>
             {
-              let nomeContatto = contatto.name;  
+              let nomeContatto = contatto.name;
               let nomeContattoMinuscolo = nomeContatto.toLowerCase();
               let testoInputMinuscolo =this.cercaContatto.toLowerCase();
               return nomeContattoMinuscolo.includes(testoInputMinuscolo);
