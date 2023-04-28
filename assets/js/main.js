@@ -5,7 +5,7 @@ const { createApp } = Vue
       return {
         attiva: 0,
         inputMessaggio: '',
-        // risposta: 'Ok!',
+        cercaContatto: '',
         contacts: [
           {
               name: 'Michele',
@@ -186,7 +186,7 @@ const { createApp } = Vue
                 status: 'sent'
             })
             this.inputMessaggio = ''
-            
+
             setTimeout( ()=>{
                 this.contacts[this.attiva].messages.push({
                     message: 'OK!',
@@ -196,7 +196,20 @@ const { createApp } = Vue
         
         },
 
+        
 
 
-    }
+    },
+    computed: {
+        filteredList() {
+            return this.contacts.filter((contatto) =>
+            {
+              let nomeContatto = contatto.name;  
+              let nomeContattoMinuscolo = nomeContatto.toLowerCase();
+              let testoInputMinuscolo =this.cercaContatto.toLowerCase();
+              return nomeContattoMinuscolo.includes(testoInputMinuscolo);
+             }
+              );
+        }
+      }
   }).mount('#app')

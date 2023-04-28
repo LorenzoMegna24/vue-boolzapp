@@ -33,11 +33,12 @@
             </div>
           </div>
           <div class="cerca-contatti p-1 d-flex align-items-center">
-            <input type="text" class="form-control" placeholder="Cerca contatto" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            
           </div>
           <div class="lista-chat">
+            <input type="text" class="form-control" v-model="cercaContatto" placeholder="Cerca contatto" aria-label="Example text with button addon" aria-describedby="button-addon1">
             <ul class="list-group" >
-              <li v-for="(element, index) in contacts"
+              <li v-for="(element, index) in filteredList"
               @click="apriChat(index)"
               class="d-flex align-items-center p-2 border-bottom">
                 <img class="rounded-circle me-2" v-bind:src="element.avatar" alt="">

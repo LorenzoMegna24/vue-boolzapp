@@ -60,6 +60,7 @@ img{
 .notifiche{
   background-color: #8edafc;
   height: 10%;
+  margin-bottom: 0;
 }
 .notifiche i{
   color: lightskyblue;
@@ -82,13 +83,16 @@ img{
   font-size: 15px;
   font-weight: 500;
 }
-.cerca-contatti{
+/* .cerca-contatti{
   height: 7%;
   background-color: rgb(244, 244, 244);
-}
+} */
 .lista-chat{
-  height: 73%;
+  height: 80%;
   overflow: auto;
+}
+.p-1{
+  padding: 0!important;
 }
 
 ul{
