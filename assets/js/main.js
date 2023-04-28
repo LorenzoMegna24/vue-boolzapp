@@ -5,6 +5,7 @@ const { createApp } = Vue
       return {
         attiva: 0,
         inputMessaggio: '',
+        // risposta: 'Ok!',
         contacts: [
           {
               name: 'Michele',
@@ -185,7 +186,17 @@ const { createApp } = Vue
                 status: 'sent'
             })
             this.inputMessaggio = ''
-        }
+            
+            setTimeout( ()=>{
+                this.contacts[this.attiva].messages.push({
+                    message: 'OK!',
+                    status: 'received'
+                })
+               }, 2000)
+        
+        },
+
+
 
     }
   }).mount('#app')
